@@ -1,0 +1,5 @@
+com/codejss/petclinic/models/Pet.class
+com/codejss/petclinic/models/Owner.class
+com/codejss/petclinic/models/PetType.class
+com/codejss/petclinic/models/Person.class
+com/codejss/petclinic/models/Vet.class
