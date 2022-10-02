@@ -2,13 +2,14 @@ package com.codejss.petclinic.services.map;
 
 import com.codejss.petclinic.models.Vet;
 import com.codejss.petclinic.services.CrudService;
+import com.codejss.petclinic.services.VetService;
 
 import java.util.Set;
 
 /**
  * @author codejss
  */
-public class VerServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService{
 
     @Override
     public Set<Vet> findAll() {
@@ -26,7 +27,7 @@ public class VerServiceMap extends AbstractMapService<Vet, Long> implements Crud
     }
 
     @Override
-    public Vet Save(Vet object) {
+    public Vet save(Vet object) {
         return super.save(object.getId(), object);
     }
 
