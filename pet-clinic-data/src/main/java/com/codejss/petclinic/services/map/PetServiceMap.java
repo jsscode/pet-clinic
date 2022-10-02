@@ -1,14 +1,15 @@
 package com.codejss.petclinic.services.map;
 
 import com.codejss.petclinic.models.Pet;
-import com.codejss.petclinic.services.CrudService;
 import com.codejss.petclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 /**
  * @author codejss
  */
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {

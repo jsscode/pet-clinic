@@ -1,14 +1,15 @@
 package com.codejss.petclinic.services.map;
 
 import com.codejss.petclinic.models.Owner;
-import com.codejss.petclinic.services.CrudService;
 import com.codejss.petclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 /**
  * @author codejss
  */
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
