@@ -1,6 +1,5 @@
 package com.codejss.petclinic.controllers;
 
-import com.codejss.petclinic.models.Owner;
 import com.codejss.petclinic.services.OwnerService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,5 +26,10 @@ public class OwnerController {
 
         model.addAttribute("owners", ownerService.findAll());
         return "owners/index";
+    }
+
+    @RequestMapping("find")
+    public String findOwner(){
+        return "not_implement";
     }
 }
