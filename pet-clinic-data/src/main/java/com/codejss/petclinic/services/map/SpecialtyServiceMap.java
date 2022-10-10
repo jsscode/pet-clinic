@@ -1,7 +1,7 @@
 package com.codejss.petclinic.services.map;
 
 import com.codejss.petclinic.models.Speciality;
-import com.codejss.petclinic.services.SpecialtiesService;
+import com.codejss.petclinic.services.SpecialtyService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -10,7 +10,7 @@ import java.util.Set;
  * @author codejss
  */
 @Service
-public class SpecialtyServiceMap extends AbstractMapService<Speciality, Long> implements SpecialtiesService {
+public class SpecialtyServiceMap extends AbstractMapService<Speciality, Long> implements SpecialtyService {
 
     @Override
     public Set<Speciality> findAll() {

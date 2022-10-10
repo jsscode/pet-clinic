@@ -5,5 +5,5 @@ import com.codejss.petclinic.models.Speciality;
 /**
  * @author codejss
  */
-public interface SpecialtiesService extends CrudService<Speciality, Long>{
+public interface SpecialtyService extends CrudService<Speciality, Long>{
 }
